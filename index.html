@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matthew Thompson | Technical Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Particle.js for background animation -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Styling -->
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        color: #ffffff;
+        background-color: #141e30;
+        overflow-y: auto; /* Enable vertical scrolling */
+        overflow-x: hidden; /* Disable horizontal scrolling */
+      }
+
+      /* Styling for the main content */
+      .content {
+        position: relative;
+        z-index: 1;
+        padding: 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h1,
+      h2 {
+        color: #a7ddba;
+        text-transform: uppercase;
+        margin-bottom: 40px; /* Keep larger margin for main headings */
+      }
+
+      h3 {
+        color: #a7ddba;
+        margin-bottom: 5px; /* Reduce margin between job title and date range */
+      }
+
+      h4 {
+        margin-top: 0;
+        font-weight: normal;
+        color: #d1d5db; /* Lighter color for date range */
+      }
+
+      p,
+      ul,
+      li,
+      a {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #e8eaed;
+      }
+
+      a {
+        color: #b4edd2;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      a:hover {
+        color: #00c2ff;
+      }
+
+      ul {
+        list-style-type: disc; /* Adds the bullet points */
+        padding-left: 40px; /* Adds indentation for the bullets */
+      }
+
+      li {
+        margin-bottom: 10px;
+        color: #d1d5db; /* Ensure text color stays consistent */
+      }
+
+      /* Button styling */
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px 0;
+        background-color: #ffd770;
+        color: #141e30;
+        border-radius: 50px;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #00c2ff;
+        color: #ffffff;
+      }
+
+      /* Background animation using Particles.js */
+      #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }
+
+      /* Container for resume link and contact */
+      .resume,
+      .contact {
+        margin-top: 30px;
+      }
+
+      /* Add padding between sections */
+      .section {
+        margin-bottom: 50px;
+      }
+
+      /* Responsive design */
+      @media only screen and (max-width: 768px) {
+        body {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Particle.js background container -->
+    <div id="particles-js"></div>
+
+    <!-- Main content -->
+    <div class="content">
+      <h1>Matthew Thompson | Technical Portfolio</h1>
+      <p>
+        Welcome! I'm <strong>Matthew Thompson</strong>, a dedicated data
+        professional with expertise in Data Analytics, Documentation,
+        Governance, Quality Engineering, and software development. My focus is
+        on solving complex problems through clean, efficient code, streamlined
+        processes, and scalable solutions.
+      </p>
+
+      <h2>Core Technical Skills</h2>
+      <p>
+        I have developed a strong foundation in several programming languages,
+        machine learning techniques, and data governance methodologies.
+      </p>
+
+      <h3>Python</h3>
+      <ul>
+        <li>
+          <strong>Data Wrangling & Manipulation:</strong> Efficient in handling
+          large datasets using libraries like <code>pandas</code>,
+          <code>NumPy</code>, and <code>SQLAlchemy</code>. These tools have
+          enabled me to clean, preprocess, and structure data for analysis and
+          reporting.
+        </li>
+        <li>
+          <strong>Data Visualization:</strong> Proficient in
+          <code>matplotlib</code>, <code>seaborn</code>, and <code>Plotly</code>
+          for generating insightful, interactive, and visually compelling
+          reports and dashboards. My visualizations focus on clarity and
+          storytelling for both technical and non-technical audiences.
+        </li>
+        <li>
+          <strong>Machine Learning & Modeling:</strong> Experienced with
+          <code>scikit-learn</code> for building, tuning, and evaluating
+          predictive models. I have applied various algorithms like Random
+          Forests, Gradient Boosting, and Logistic Regression in credit risk
+          modeling and other financial applications.
+        </li>
+        <li>
+          <strong>Modeling Pipelines:</strong> Expertise in building automated
+          pipelines for model training, validation, and deployment using
+          <code>scikit-learn</code> and <code>mlflow</code>. My focus is on
+          scalability and maintaining governance throughout the modeling
+          lifecycle.
+        </li>
+        <li>
+          <strong>Statistical Analysis:</strong> Implemented hypothesis testing,
+          regression analysis, and clustering algorithms in Python to extract
+          actionable insights from data, providing robust support for business
+          decisions.
+        </li>
+      </ul>
+      <h3>R, SAS, SQL, Web, and Visualization</h3>
+      <ul>
+        <li>Data Visualization with PowerBI, Tableau, and Domo</li>
+        <li>SQL & SAS for data manipulation and analysis</li>
+        <li>Machine learning and predictive modeling with R</li>
+        <li>Quality Engineering & CI/CD pipeline automation</li>
+        <li>HTML, CSS, and JavaScript for web development</li>
+      </ul>
+
+      <h2>Featured GitHub Projects</h2>
+
+      <h3>
+        <a
+          href="https://github.com/matthewbakerthompson/credit_decision_model_rf/tree/main"
+          target="_blank"
+          >Credit Card Originations Decisioning Model</a
+        >
+      </h3>
+      <p>
+        A Random Forest model that analyzes customer creditworthiness and
+        provides product recommendations based on credit scores. This project
+        showcases my proficiency in machine learning and model risk governance.
+      </p>
+
+      <h3>
+        <a
+          href="https://github.com/matthewbakerthompson/generate_credit_origination_data"
+          >Credit Origination Data Generation</a
+        >
+      </h3>
+      <p>
+        This Python script generates rules-based, synthetic credit origination data for model
+        development, simulating real-world customer attributes and behavior for
+        use in machine learning models.
+      </p>
+
+      <h3>
+        <a
+          href="https://github.com/matthewbakerthompson/APICompareTool"
+          >API Compare Tool</a
+        >
+      </h3>
+      <p>
+        This repository contains multiple versions of an API Compare tool, a Django application and a Streamlit version. 
+        The tool enables a user to enter values they wish to compare to expected values in an API, enabling quick data validation 
+        in a manual testing scenario.
+      </p>
+
+      <h3>
+        <a
+          href="https://github.com/matthewbakerthompson/CreditCustomerChurn"
+          >Credit Customer Churn</a
+        >
+      </h3>
+      <p>
+        This Jupyter Notebook is focused on analyzing and predicting customer churn in a credit card portfolio using a publicly available dataset. 
+        The analysis includes data preparation, model building, and evaluation steps, all conducted in a Python environment.
+      </p>
+      
+      <div class="resume section">
+        <h2>Resume</h2>
+        <p>
+          Want to know more about my professional experience and skills? Check
+          out my full resume. <br />
+          <a
+            href="https://github.com/matthewbakerthompson/matthewbakerthompson.github.io/blob/main/Matthew%20Thompson_AVP_Analytics_Model_Risk_Governance.pdf"
+            class="btn"
+            target="_blank"
+            >Download My Resume</a
+          >
+        </p>
+      </div>
+
+      <div class="contact section">
+        <h2>Contact Me</h2>
+        <ul>
+          <li>
+            Email:
+            <a href="mailto:matthewbakethompson@gmail.com"
+              >matthewbakerthompson@gmail.com</a
+            >
+          </li>
+          <li>
+            LinkedIn:
+            <a
+              href="https://linkedin.com/in/matthewbakerthompson"
+              target="_blank"
+              >LinkedIn Profile</a
+            >
+          </li>
+          <li>
+            GitHub:
+            <a href="https://github.com/matthewbakerthompson" target="_blank"
+              >GitHub Profile</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Initialize Particle.js for the background animation -->
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 15, // Reduced number of particles
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#00C2FF", // Matching color scheme
+          },
+          shape: {
+            type: "polygon", // Polygonal shapes similar to original
+            stroke: {
+              width: 2,
+              color: "#00C2FF",
+            },
+            polygon: {
+              nb_sides: 7, // Fewer sides for simplicity
+            },
+          },
+          opacity: {
+            value: 0.3,
+            random: true,
+            anim: {
+              enable: false,
+            },
+          },
+          size: {
+            value: 3,
+            random: true,
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#00FFB0",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            repulse: {
+              distance: 100,
+              duration: 0.4,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
+</html>
