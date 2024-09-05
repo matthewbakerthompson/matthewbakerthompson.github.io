@@ -103,12 +103,13 @@
 
       /* Background animation using Particles.js */
       #particles-js {
-        position: absolute;
+        position: fixed; /* Fix it to the viewport */
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        z-index: 0;
+        z-index: 0; /* Keep it behind other content */
+        pointer-events: none; /* Ensure no interference with page interactions */
       }
 
       /* Container for resume link and contact */
@@ -219,38 +220,40 @@
         >
       </h3>
       <p>
-        This Python script generates rules-based, synthetic credit origination data for model
-        development, simulating real-world customer attributes and behavior for
-        use in machine learning models.
+        This Python script generates rules-based, synthetic credit origination
+        data for model development, simulating real-world customer attributes
+        and behavior for use in machine learning models.
       </p>
 
       <h3>
-        <a
-          href="https://github.com/matthewbakerthompson/APICompareTool"
+        <a href="https://github.com/matthewbakerthompson/APICompareTool"
           >API Compare Tool</a
         >
       </h3>
       <p>
-        This repository contains multiple versions of an API Compare tool, a Django application and a Streamlit version. 
-        The tool enables a user to enter values they wish to compare to expected values in an API, enabling quick data validation 
-        in a manual testing scenario.
+        This repository contains multiple versions of an API Compare tool, a
+        Django application and a Streamlit version. The tool enables a user to
+        enter values they wish to compare to expected values in an API, enabling
+        quick data validation in a manual testing scenario.
       </p>
 
       <h3>
-        <a
-          href="https://github.com/matthewbakerthompson/CreditCustomerChurn"
+        <a href="https://github.com/matthewbakerthompson/CreditCustomerChurn"
           >Credit Customer Churn</a
         >
       </h3>
       <p>
-        This Jupyter Notebook is focused on analyzing and predicting customer churn in a credit card portfolio using a publicly available dataset. 
-        The analysis includes data preparation, model building, and evaluation steps, all conducted in a Python environment.
+        This Jupyter Notebook is focused on analyzing and predicting customer
+        churn in a credit card portfolio using a publicly available dataset. The
+        analysis includes data preparation, model building, and evaluation
+        steps, all conducted in a Python environment.
       </p>
-      
+
       <div class="resume section">
         <h2>Resume</h2>
         <p>
-          Learn about my professional experience and skills in my full resume. <br />
+          Learn about my professional experience and skills in my full resume.
+          <br />
           <a
             href="https://github.com/matthewbakerthompson/matthewbakerthompson.github.io/blob/main/Matthew%20Thompson_AVP_Analytics_Model_Risk_Governance.pdf"
             class="btn"
